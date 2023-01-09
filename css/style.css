@@ -1,0 +1,276 @@
+/* selector: puede ser etiqueta html, class, id */
+/* propiedad: valor color: red */
+@import url('https://fonts.googleapis.com/css2? family= Poppins:ital@0;1 & family= Roboto:ital@0;1 & display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* codigos CSS*/
+
+p{
+    font-family:'Poppins', sans-serif; ;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 25px;
+    text-align: center;
+    line-height: 40px;
+    letter-spacing: 5px;
+    word-spacing: 7px;
+    text-transform: uppercase;
+    color: rgb(243, 243, 243);
+}
+
+.segundo-parrafo{
+    font-family:'Poppins', sans-serif; ;
+    font-style:italic ;
+    color:rgb(211, 85, 39);
+    text-align:center ;
+    line-height:35px ;
+    letter-spacing:5px ;
+}
+
+#color{
+    color: aqua;
+}
+
+h1{
+    text-align: end;
+    background-color: darkcyan;
+}
+
+ul{
+    list-style-type: none;
+}
+
+/* color a una oracion especifica del texto */
+p span{
+    text-transform: lowercase;
+    color: brown;
+}
+
+/* herencia a h1 y p, padre */
+section{
+    background-color: darkcyan; 
+}
+
+/* cascada,  */
+h2{
+    font-family:'Poppins', sans-serif; ;
+    color: forestgreen
+}
+
+h2{
+    font-family:'Poppins', sans-serif; ;
+    color: rgb(104, 247, 199);
+}
+
+a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+body{
+    background-color: rgb(126, 161, 65);
+
+}
+
+header{
+    background-color: rgb(255, 255, 255);
+    padding: 40px;
+}
+
+h1{
+    color: black;
+    padding: 20px;
+    text-align: center;
+    margin: 50px 20px 50px 20px;
+    border: 20px solid black;
+}
+
+p{
+    color: rgb(3, 3, 3);
+    padding: 40px;
+    margin-right: 100px;
+    margin-top: 60px;
+    margin-left: 60px;
+    border: 15px solid black;
+}
+
+.ensaladas{
+    margin-top: 60px;
+    margin-left: 430px;
+    margin-bottom: 40px;
+    border: 10px double green;
+    border-radius: 10%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.ensaladitas_{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+footer{
+    padding: 80px;
+    margin-top: 100px;
+    background-color:darkcyan;
+}
+
+/* flex box */
+
+header{
+    padding: 50px;
+}
+
+nav ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.redes{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+/* Grids */
+
+div{
+    width: 100px;
+    height: 100px;
+    background-color: chartreuse;
+    margin: 5px;
+}
+
+.grids_{
+    background-color: gray;
+    display: grid;
+    grid-template-columns: 300px 150px;
+    grid-template-rows: 200px 150px;
+    justify-content: center;
+}
+
+.subtitulo_{
+    margin-bottom: 40px;
+}
+
+
+/* comienzo a dar estilos mobile first */
+
+
+
+/* Transiciones y demas */
+
+
+
+.box1{
+    background-color: cadetblue;
+    transition-property: all;
+    transition-duration: 3s;
+}
+
+.box2{
+    background-color: cadetblue;
+    transition-property: all;
+    transition-duration: 3s;
+}
+
+.box:hover{
+    transform: scale(2) rotate(360deg);
+}
+
+.circle1, .circle2, .circle3, .circle4, .circle5{
+    border-radius: 50px;
+    height: 40px;
+    width: 40px;
+    margin: 20px;
+}
+
+.circle1{
+    background-color: violet;
+    transition: all 3s ease;
+}
+
+.circle2{
+    background-color: red;
+    transition: all 3s ease-in;
+}
+
+.circle3{
+    background-color: yellow;
+    transition: all 3s ease-in-out;
+}
+
+.circle4{
+    background-color: blueviolet;
+    transition: all 3s ease-out;
+}
+
+.circle5{
+    background-color: olivedrab;
+    transition: all 3s step-end;
+}
+
+.container-circle:hover .circle1,
+.container-circle:hover .circle2,
+.container-circle:hover .circle3,
+.container-circle:hover .circle4,
+.container-circle:hover .circle5{
+    transform: translateX(300px);
+}
+
+.combinado{
+    background-color: aqua;
+    height: 75px;
+    width: 75px;
+    margin: 60px auto;
+    transition: all 2s;
+}
+
+.combinado:hover{
+    transform: rotate(360deg);
+}
+
+.animaciones{
+    width: 100px;
+    height: 100px;
+    margin: 50px auto;
+    background-color: darkolivegreen;
+}
+
+.animaciones:hover{
+    animation: ismi 4s;
+}
+
+@keyframes ismi {
+    0%{
+        background-color: darkslategray;
+    }
+    25%{
+        border-radius: 40%;
+    }
+    50%{
+        transform: rotate(360deg);
+    }
+    75%{
+        transform: translate(100px);
+    }
+}
+
+
+
+
+
+
+
+
+
+
