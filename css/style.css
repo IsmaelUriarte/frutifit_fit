@@ -10,20 +10,17 @@
 /* codigos CSS*/
 
 p{
-    font-family:'Poppins', sans-serif; ;
+    font-family:'Poppins', sans-serif; 
     font-style: normal;
     font-weight: bold;
-    font-size: 25px;
     text-align: center;
     line-height: 40px;
     letter-spacing: 5px;
     word-spacing: 7px;
     text-transform: uppercase;
-    color: rgb(243, 243, 243);
-    border: 5px solid black;
-    margin-bottom: 20px;
-    margin-top: 20px;
-    background-color: darkcyan;
+    color: black;
+    margin-bottom: 35px;
+    margin-top: 35px;
 }
 
 .segundo-parrafo{
@@ -36,37 +33,59 @@ p{
 }
 
 h1{
-    background-color: darkcyan;
+    color: black;
+    padding: 20px;
+    text-align: center;
+    margin: 30px 20px 30px 20px;
+}
+
+.bienvenida{
+    background-color: rgb(102, 201, 152);
     color: black;
     padding: 20px;
     text-align: center;
     margin: 50px 20px 50px 20px;
-    border: 10px solid black;
+    border: 3px solid black;
+
+}
+
+.venta{
+    text-align: center;
+    color: rgb(68, 70, 71);
 }
 
 ul{
     list-style-type: none;
 }
 
-/* color a una oracion especifica del texto */
-
+/* color a una oracion especifica del texto
 p span{
     text-transform: lowercase;
     color: brown;
-}
+}   */
 
-/* cascada,  */
+.prod_{
+    margin-top: 40px;
+    font-family: 'Noto Sans', sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 30px;
+    text-align: left;
+    letter-spacing: 2px;
+    color: black;
+    text-align:center;
+}
 
 h2{
-    font-family:'Poppins', sans-serif; ;
-    color: rgb(104, 247, 199);
-    color: rgb(3, 3, 3);
-    padding: 40px;
-    margin-right: 450px;
-    margin-top: 60px;
-    margin-left: 60px;
-    border: 8px solid black;
-}
+        font-family: 'Noto Sans', sans-serif;
+        font-style: normal;
+        font-weight: 800;
+        font-size: 30px;
+        text-align: left;
+        letter-spacing: 2px;
+        color: black;
+        text-align:center;
+    }
 
 a{
     text-decoration: none;
@@ -74,7 +93,7 @@ a{
 }
 
 body{
-    background-color: rgb(126, 161, 65);
+    background-color: rgb(142, 177, 83);
 
 }
 
@@ -87,7 +106,7 @@ header{
     margin-top: 60px;
     margin-left: 430px;
     margin-bottom: 40px;
-    border: 10px double green;
+    border: 5px double green;
     border-radius: 10%;
     display: flex;
     flex-direction: row;
@@ -95,11 +114,16 @@ header{
     justify-content: center;
 }
 
+.ensaladas:hover{
+    scale: 120%;
+}
+
 .ensaladitas_{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
+    border-radius: 50%;
 }
 
 footer{
@@ -126,7 +150,17 @@ nav ul{
     justify-content: space-around;
 }
 
+.direcc{
+    margin-top: 60px;
+}
+
 /* Grids */
+
+.grill{
+    font-family:'Poppins', sans-serif; ;
+    color: rgb(104, 247, 199);
+    color: rgb(3, 3, 3);
+}
 
 .grids_ div{
     width: 100px;
@@ -161,27 +195,8 @@ nav ul{
 
 /* Transiciones y demas */
 
-.transicion_ div{
-    width: 100px;
-    height: 100px;
-    background-color: chartreuse;
-    margin: 5px; 
-}
-
-.box1{
-    background-color: cadetblue;
-    transition-property: all;
-    transition-duration: 3s;
-}
-
-.box2{
-    background-color: cadetblue;
-    transition-property: all;
-    transition-duration: 3s;
-}
-
-.box:hover{
-    transform: scale(2) rotate(360deg);
+.anim-img:hover{
+    scale: 120%;
 }
 
 .circle1, .circle2, .circle3, .circle4, .circle5{
@@ -261,6 +276,47 @@ nav ul{
         transform: translate(100px);
     }
 }
+
+form {
+    display: flex;
+    flex-direction: column;
+    background-color: #3c947e;
+    width: 80%;
+    margin: 120px auto;
+    padding: 30px;
+    box-shadow: 6px 4px 29px -2px rgba(219,216,219,1);
+}
+
+form h4 {
+    margin-bottom: 15px;
+    color: aliceblue;
+}
+
+form input {
+    padding: 10px;
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+form button {
+    margin: 0 auto;
+    padding: 6px 23px;
+    border-radius: 15px;
+    border: none;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+
 
 
 
