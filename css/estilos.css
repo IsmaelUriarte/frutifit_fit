@@ -1,0 +1,341 @@
+/* selector: puede ser etiqueta html, class, id */
+/* propiedad: valor color: red */
+@import url("https://fonts.googleapis.com/css2? family= Poppins:ital@0;1 & family= Roboto:ital@0;1 & display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  background-image: url("../img/fondo-ensalada.webp");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+header {
+  background-color: rgb(255, 255, 255);
+  padding: 40px;
+}
+
+p {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  text-align: center;
+  line-height: 40px;
+  letter-spacing: 5px;
+  word-spacing: 7px;
+  text-transform: uppercase;
+  color: rgb(252, 252, 252);
+  margin-bottom: 35px;
+  margin-top: 35px;
+}
+
+.segundo-parrafo {
+  font-family: "Poppins", sans-serif;
+  font-style: italic;
+  color: rgb(211, 85, 39);
+  text-align: center;
+  line-height: 35px;
+  letter-spacing: 5px;
+}
+
+h1 {
+  color: black;
+  padding: 20px;
+  text-align: center;
+  margin: 30px 20px 30px 20px;
+}
+
+.bienvenida {
+  background-color: rgb(102, 201, 152);
+  color: black;
+  padding: 20px;
+  text-align: center;
+  margin: 50px 20px 50px 20px;
+  border: 3px solid black;
+}
+
+.venta {
+  text-align: center;
+  color: rgb(68, 70, 71);
+}
+
+ul {
+  list-style-type: none;
+}
+
+/* color a una oracion especifica del texto
+p span{
+    text-transform: lowercase;
+    color: brown;
+}   */
+.prod_ {
+  margin-top: 40px;
+  font-family: "Noto Sans", sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 30px;
+  text-align: left;
+  letter-spacing: 2px;
+  color: black;
+  text-align: center;
+}
+
+h2 {
+  font-family: "Noto Sans", sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 30px;
+  text-align: left;
+  letter-spacing: 2px;
+  color: black;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+}
+
+/* body { 
+  background-color: rgb(170, 204, 111);
+}*/
+
+fondo imagen
+
+
+
+.ensaladas {
+  margin-top: 60px;
+  margin-left: 430px;
+  margin-bottom: 40px;
+  border: 5px double green;
+  border-radius: 10%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.ensaladas:hover {
+  scale: 120%;
+}
+
+.ensaladitas {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+footer {
+  padding: 80px;
+  margin-top: 100px;
+  background-color: darkcyan;
+}
+
+/* flex box */
+
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.redes {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.direcc {
+  margin-top: 60px;
+}
+
+/* Grids */
+
+
+/* comienzo a dar estilos mobile first */
+/* Transiciones y demas */
+.anim-img:hover {
+  scale: 120%;
+}
+
+.circle1, .circle2, .circle3, .circle4, .circle5 {
+  border-radius: 50px;
+  height: 40px;
+  width: 40px;
+  margin: 20px;
+}
+
+.circle1 {
+  background-color: violet;
+  transition: all 3s ease;
+}
+
+.circle2 {
+  background-color: red;
+  transition: all 3s ease-in;
+}
+
+.circle3 {
+  background-color: yellow;
+  transition: all 3s ease-in-out;
+}
+
+.circle4 {
+  background-color: blueviolet;
+  transition: all 3s ease-out;
+}
+
+.circle5 {
+  background-color: olivedrab;
+  transition: all 3s step-end;
+}
+
+.container-circle:hover .circle1,
+.container-circle:hover .circle2,
+.container-circle:hover .circle3,
+.container-circle:hover .circle4,
+.container-circle:hover .circle5 {
+  transform: translateX(300px);
+}
+
+.combinado {
+  background-color: aqua;
+  height: 75px;
+  width: 75px;
+  margin: 60px auto;
+  transition: all 2s;
+}
+
+.combinado:hover {
+  transform: rotate(360deg);
+}
+
+.animaciones {
+  width: 100px;
+  height: 100px;
+  margin: 50px auto;
+  background-color: darkolivegreen;
+}
+
+.animaciones:hover {
+  -webkit-animation: ismi 4s;
+          animation: ismi 4s;
+}
+
+@-webkit-keyframes ismi {
+  0% {
+    background-color: darkslategray;
+  }
+  25% {
+    border-radius: 40%;
+  }
+  50% {
+    transform: rotate(360deg);
+  }
+  75% {
+    transform: translate(100px);
+  }
+}
+
+@keyframes ismi {
+  0% {
+    background-color: darkslategray;
+  }
+  25% {
+    border-radius: 40%;
+  }
+  50% {
+    transform: rotate(360deg);
+  }
+  75% {
+    transform: translate(100px);
+  }
+}
+form {
+  display: flex;
+  flex-direction: column;
+  background-color: #3c947e;
+  width: 80%;
+  margin: 120px auto;
+  padding: 30px;
+  box-shadow: 6px 4px 29px -2px rgb(219, 216, 219);
+}
+
+form h4 {
+  margin-bottom: 15px;
+  color: aliceblue;
+}
+
+form input {
+  padding: 10px;
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+form button {
+  margin: 0 auto;
+  padding: 6px 23px;
+  border-radius: 15px;
+  border: none;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+@media (min-width: 768px) {
+  header {
+    padding: 50ox;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  nav {
+    width: 80%;
+  }
+  nav ul {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .ensaladitas {
+    justify-content: space-evenly;
+  }
+}
+@media (min-width: 1024px) {
+  form {
+    width: 40%;
+  }
+}
+.contenedor-carrito {
+  height: 80vh;
+}
+
+.seccion-carrito {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 30vh;
+  align-items: center;
+}
+
+.contenedor-boton {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+.btn-carrito {
+  color: rgb(29, 29, 29);
+  border: 3px solid rgb(13, 13, 13);
+  padding: 10px;
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 2px;
+}/*# sourceMappingURL=estilos.css.map */
