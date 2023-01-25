@@ -186,11 +186,11 @@ nav ul {
 
 /* comienzo a dar estilos mobile first */
 /* Transiciones y demas */
-/*
-.anim-img:hover{
-    scale: 120%;
+.anim-img:hover {
+  scale: 120%;
 }
 
+/*
 .circle1, .circle2, .circle3, .circle4, .circle5{
     border-radius: 50px;
     height: 40px;
