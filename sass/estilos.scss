@@ -1,3 +1,5 @@
+@import "generales";
+@import"index";
 /* selector: puede ser etiqueta html, class, id */
 /* propiedad: valor color: red */
 @import url('https://fonts.googleapis.com/css2? family= Poppins:ital@0;1 & family= Roboto:ital@0;1 & display=swap');
@@ -51,6 +53,17 @@ h1{
     margin: 30px 20px 30px 20px;
 }
 
+h2{
+        font-family: 'Noto Sans', sans-serif;
+        font-style: normal;
+        font-weight: 800;
+        font-size: 30px;
+        text-align: left;
+        letter-spacing: 2px;
+        color: black;
+        text-align:center;
+    }
+    
 .bienvenida{
     background-color: rgb(102, 201, 152);
     color: black;
@@ -92,16 +105,7 @@ p span{
     text-align:center;
 }
 
-h2{
-        font-family: 'Noto Sans', sans-serif;
-        font-style: normal;
-        font-weight: 800;
-        font-size: 30px;
-        text-align: left;
-        letter-spacing: 2px;
-        color: black;
-        text-align:center;
-    }
+
 
 a{
     text-decoration: none;
