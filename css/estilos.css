@@ -32,20 +32,25 @@
 
 /* codigos CSS*/
 body {
-  background-image: url("../img/fondo-ensaladaa1.webp");
+  background-image: url("../img/fondo-esnsalada.jpg");
   background-repeat: no-repeat;
-  background-size: 100% 100%;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+.transparencia {
+  background-color: rgba(0, 0, 0, 0.329);
 }
 
 header {
-  background-color: rgb(255, 255, 255);
   padding: 30px;
 }
 
 p {
   font-family: "Poppins", sans-serif;
-  font-style: normal;
-  font-weight: bold;
+  font-style: italic;
+  font-weight: bolder;
   text-align: center;
   line-height: 40px;
   letter-spacing: 5px;
@@ -74,8 +79,12 @@ h2 {
   text-align: center;
 }
 
+.bienv_ {
+  padding: 100px;
+}
+
 .bienvenida {
-  background-color: rgb(102, 201, 152);
+  background-color: darkcyan;
   color: black;
   padding: 20px;
   text-align: center;
@@ -140,10 +149,42 @@ a {
   justify-content: center;
 }
 
-.ensaladas:hover {
-  scale: 120%;
+.cualquiera .info-prod {
+  text-align: center;
 }
 
+.cualquiera:hover {
+  scale: 130%;
+}
+
+.cualquiera {
+  background-color: rgba(255, 255, 255, 0.288);
+  margin-left: 15%;
+  margin-right: 15%;
+  margin-bottom: 10px;
+}
+
+.cualquiera .anim-img {
+  width: 300px;
+  height: 300px;
+}
+
+@media screen and (max-width: 1500px) {
+  .cualquiera {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+}
+@media screen and (max-width: 750px) {
+  .cualquiera {
+    margin-left: 2%;
+    margin-right: 2%;
+  }
+  .cualquiera .anim-img {
+    width: 250px;
+    height: 250px;
+  }
+}
 .ensaladitas {
   display: flex;
   flex-direction: row;
@@ -152,8 +193,8 @@ a {
 }
 
 footer {
-  padding: 50px;
-  margin-top: 50px;
+  padding: 40px;
+  margin-top: 40px;
   background-color: darkcyan;
 }
 
@@ -186,10 +227,6 @@ nav ul {
 
 /* comienzo a dar estilos mobile first */
 /* Transiciones y demas */
-.anim-img:hover {
-  scale: 120%;
-}
-
 /*
 .circle1, .circle2, .circle3, .circle4, .circle5{
     border-radius: 50px;
