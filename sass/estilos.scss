@@ -17,11 +17,9 @@ body{
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
-    
+    height: 100%;
 }
-.transparencia{
-    background-color: rgba(0, 0, 0, 0.329);
-}
+
     header {
     padding: 30px;
 }
@@ -33,6 +31,13 @@ p{
     color: white;
     margin-bottom: 35px;
     margin-top: 35px;
+}
+
+div .transparencia{
+    background-color: rgba(255, 255, 255, 0.178);
+    margin-left: 8%;
+    margin-right: 8%;
+    margin-bottom: 8px;
 }
 
 h1{
@@ -69,6 +74,7 @@ h2{
 .venta{
     text-align: center;
     color: white;
+    margin: 25px;
 }
 
 .section1{
@@ -116,18 +122,6 @@ a{
  */
 
 
-.ensaladas{
-    margin-top: 60px;
-    margin-left: 430px;
-    margin-bottom: 40px;
-    border: 5px double green;
-    border-radius: 10%;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
 .cualquiera .info-prod{
     text-align: center;
 }
@@ -157,8 +151,8 @@ a{
         margin-right: 2%;
     }
     .cualquiera .anim-img{
-        width: 250px;
-        height: 250px;
+        width: 200px;
+        height: 200px;
     }
 }
 .ensaladitas{
