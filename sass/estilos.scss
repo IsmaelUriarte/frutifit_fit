@@ -178,12 +178,12 @@ a{
     }
 }
 
-@media screen and (max-width: 512px){
+@media screen and (max-width: 514px){
     .cualquiera{
         margin-left: 1%;
         margin-right: 1%;
     }
-    .cualquiera .anim-img {
+    .cualquiera .anim-ismg {
         width: 165px;
         height: 165px;
         }
@@ -231,7 +231,7 @@ nav ul{
 }
 
 .color{
-    margin: 40px;
+    margin: 80px;
 }
 
 /* comienzo a dar estilos mobile first */
