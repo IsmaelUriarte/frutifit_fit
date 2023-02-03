@@ -20,15 +20,15 @@ body{
     background-size: cover;
     background-position: bottom;
     color: black;
-    display: flex;
-    flex-direction: column;
-    justify-content: normal;
-    min-height: 100vh;
+    // display: flex;
+    // flex-direction: column;
+    // justify-content: normal;
+    // min-height: 100vh;
 }
 
-body .wrapper{
-    flex: 1;
-}
+// body .wrapper{
+//     flex: 1;
+// }
 
     header {
     padding: 30px;
@@ -149,16 +149,19 @@ a{
 .cualquiera:hover{
     scale: 130%;
 }
+
 .cualquiera{
     background-color: rgba(255, 255, 255, 0.288);
     margin-left: 15%;
     margin-right: 15%;
     margin-bottom: 10px;
 }
+
 .cualquiera .anim-img{
     width: 300px;
     height: 300px;
 }
+
 @media screen and (max-width: 1500px){
     .cualquiera{
         margin-left: 5%;
@@ -178,7 +181,7 @@ a{
     }
 }
 
-@media screen and (max-width: 514px){
+@media screen and (max-width: 512px){
     .cualquiera{
         margin-left: 1%;
         margin-right: 1%;
@@ -197,8 +200,8 @@ a{
 }
 
 footer{
-    padding: 35px;
-    margin-top: 35px;
+    padding: 45px;
+    margin-top: 55px;
     background-color:darkcyan;
 }
 
@@ -358,7 +361,7 @@ form button {
 
 @media (min-width: 768px){
     header{
-        padding: 50ox;
+        padding: 50px;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -413,3 +416,38 @@ form button {
     text-decoration: none;
     letter-spacing: 2px;
 }
+
+
+.whatsapp{
+    display: none;
+}
+@media (max-width: 768px) {
+    .whatsapp{
+        display: block;
+        position: fixed;
+        right: 50px;
+        bottom: 20px;
+        z-index: 1;
+        height: auto;
+        background-color: aliceblue;
+        padding: 0px;
+        border-radius: 50% 50% 50% 50%;
+        animation: efecto 2s infinite;
+    }
+    @keyframes efecto{
+        0%{
+            box-shadow: 0 0 0 0 aliceblue;
+        }
+        100%{
+            box-shadow: 0 0 10px 10px black;
+        }
+    } 
+}
+
+
+
+
+
+
+
+
