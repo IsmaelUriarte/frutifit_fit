@@ -148,6 +148,43 @@ a {
     background-attachment: fixed;
 }
  */
+/* media quires de cartas */
+.carta {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: left;
+  margin-left: 15%;
+  margin-bottom: 8%;
+  margin-top: 8%;
+}
+
+.carta1 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: right;
+  margin-right: 15%;
+  margin-bottom: 8%;
+}
+
+.carta2 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: left;
+  margin-left: 15%;
+  margin-bottom: 8%;
+}
+
+/* .... */
+/* img de cartas */
+.carta- .img-carta {
+  width: 400px;
+  height: 600px;
+}
+
+/* .... */
 .cualquiera .info-prod {
   text-align: center;
 }
