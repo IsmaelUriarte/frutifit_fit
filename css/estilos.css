@@ -60,7 +60,7 @@ p {
 }
 
 div .transparencia {
-  background-color: rgba(255, 255, 255, 0.116);
+  background-color: rgba(0, 0, 0, 0.233);
   margin-left: 8%;
   margin-right: 8%;
   margin-bottom: 8px;
@@ -148,13 +148,12 @@ a {
     background-attachment: fixed;
 }
  */
-/* media quires de cartas */
 .carta {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: left;
-  margin-left: 15%;
+  margin-left: 8%;
   margin-bottom: 8%;
   margin-top: 8%;
 }
@@ -164,7 +163,7 @@ a {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: right;
-  margin-right: 15%;
+  margin-right: 8%;
   margin-bottom: 8%;
 }
 
@@ -173,17 +172,35 @@ a {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: left;
-  margin-left: 15%;
+  margin-left: 8%;
   margin-bottom: 8%;
 }
 
-/* .... */
 /* img de cartas */
 .carta- .img-carta {
-  width: 400px;
-  height: 600px;
+  width: 500px;
+  height: 700px;
 }
 
+.carta:hover {
+  scale: 95%;
+}
+
+.carta1:hover {
+  scale: 95%;
+}
+
+.carta2:hover {
+  scale: 95%;
+}
+
+@media screen and (max-width: 572px) {
+  .carta- .img-carta {
+    width: 250px;
+    height: 350px;
+    justify-content: center;
+  }
+}
 /* .... */
 .cualquiera .info-prod {
   text-align: center;
@@ -459,16 +476,7 @@ form button {
     background-color: aliceblue;
     padding: 0px;
     border-radius: 50% 50% 50% 50%;
-    -webkit-animation: efecto 2s infinite;
-            animation: efecto 2s infinite;
-  }
-  @-webkit-keyframes efecto {
-    0% {
-      box-shadow: 0 0 0 0 aliceblue;
-    }
-    100% {
-      box-shadow: 0 0 10px 10px black;
-    }
+    animation: efecto 2s infinite;
   }
   @keyframes efecto {
     0% {
